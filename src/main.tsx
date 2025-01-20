@@ -1,16 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import { TodosProvider } from './store/todos.tsx'
-import { BrowserRouter } from 'react-router-dom'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import { BrowserRouter } from "react-router-dom";
+import { TodosProvider } from "./context/TodosContext.tsx";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <TodosProvider>
         <App />
       </TodosProvider>
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);
