@@ -1,4 +1,4 @@
-import { useTodos } from "../context/TodosContext";
+import { useTodos } from "../context/useTodos";
 import "../index.css";
 import { useSearchParams } from "react-router-dom";
 const AllTodos = () => {

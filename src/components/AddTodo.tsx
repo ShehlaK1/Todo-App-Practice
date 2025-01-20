@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { useTodos } from "../context/TodosContext";
+import { useTodos } from "../context/useTodos";
 
 const AddTodo = () => {
   const [todo, setTodo] = useState<string>("");
